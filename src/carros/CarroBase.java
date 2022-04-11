@@ -1,23 +1,20 @@
 package carros;
 
+import combustibles.Combustible;
 import motores.Motor;
-import motores.MotorDiesel;
 
-public abstract class CarroBase {//patron de diseno template
-    
+public abstract class CarroBase {
+
 	public abstract void imprimirCategoria();
+
 	private Motor motor;
-	
-	
-	//inyeccion de dependencia que es un tipo de inversion de control
-	// esto es permitido por el polimorfismo.
+
 	public CarroBase(Motor motor) {
-		this.motor = motor; //composicion
+		this.motor = motor;
 	}
-	
-	public void imprimirMotor() { //immutable object
-		System.out.println(motor.getMotor());
+
+	public void imprimirMotor() {
+		System.out.println("Motor " + ((Combustible) motor.getTipo()).nombre());
 	}
-	
-	
+
 }

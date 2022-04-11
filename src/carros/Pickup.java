@@ -8,17 +8,11 @@ public class Pickup extends CarroBase {
 		super(motor);
 	}
 
-	@Override  //sobreescritura de metodos
+	@Override
 	public void imprimirCategoria() {
 		System.out.println("Soy pickup");
 		imprimirMotor();
-	
+
 	}
-	
-	//sobrecarga de metodos
-	public void imprimirCategoria(String name) {
-	  System.out.println(name);
-	}
-	
 
 }

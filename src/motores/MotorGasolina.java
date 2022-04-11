@@ -1,10 +1,12 @@
 package motores;
 
-public class MotorGasolina implements Motor {
+import combustibles.Gasolina;
+
+public class MotorGasolina implements Motor<Gasolina> {
 
 	@Override
-	public String getMotor() {
-		return "Motor Gasolina";
+	public Gasolina getTipo() {
+		return new Gasolina();
 	}
 
 }

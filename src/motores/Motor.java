@@ -1,6 +1,7 @@
 package motores;
 
-public interface Motor {
-	public abstract String getMotor();
+
+public interface Motor<T> {
 	
+	public abstract T getTipo();
 }
