@@ -1,2 +1,6 @@
-module laboratorio_1 {
+module examen1_moviles {
+	exports motores;
+	exports test;
+	exports carros;
+	exports combustibles;
 }
